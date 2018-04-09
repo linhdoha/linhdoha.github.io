@@ -54,13 +54,17 @@
         
 		<!-- Create a anchor to attach your augmented reality -->
 		<a-anchor hit-testing-enabled='false'>
-			<a-entity collada-model="#BNT"></a-entity>
+			
 			<!-- Add your augmented reality here -->
-			<a-box position='0 0.5 0' material='opacity: 0.5; side:double; color:red;'>
+			<a-entity collada-model="#BNT">
+				<a-animation attribute="rotation" to="360 0 0" dur="5000" easing='linear' repeat="indefinite"></a-animation>
+			</a-entity>
+
+			<!--<a-box position='0 0.5 0' material='opacity: 0.5; side:double; color:red;'>
 				<a-torus-knot radius='0.26' radius-tubular='0.05'>
 					<a-animation attribute="rotation" to="360 0 0" dur="5000" easing='linear' repeat="indefinite"></a-animation>
 				</a-torus-knot>
-			</a-box>
+			</a-box>-->
 			
 	        <!--<a-marker type='pattern' url='bu.patt'>
 	            <a-video src="#MagGo" rotation="-90 0 0" width="10" height="5" buffer="false"></a-video>
