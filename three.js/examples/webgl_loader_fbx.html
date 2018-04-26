@@ -34,7 +34,7 @@
 			Character and animation from <a href="https://www.mixamo.com/" target="_blank" rel="noopener">Mixamo</a>
 		</div>
 
-		<script src="../build/three.js"></script>
+		<script src="three.js"></script>
 
 		<script src="js/libs/inflate.min.js"></script>
 		<script src="js/loaders/FBXLoader.js"></script>
@@ -102,7 +102,7 @@
 
 				// model
 				var loader = new THREE.FBXLoader();
-				loader.load( 'models/fbx/Samba Dancing.fbx', function ( object ) {
+				loader.load( 'BNT2_logo.fbx', function ( object ) {
 
 					object.mixer = new THREE.AnimationMixer( object );
 					mixers.push( object.mixer );
